@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-bs-theme="light">
 <head>
+  <link rel = "shortcut icon" href = "./Panda-Bear-Silhouette-Logo-Design-premium-vector-PNG.png" type = "image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chi Sono - Il Mio Portfolio</title>
@@ -11,7 +12,7 @@
     }
     .custom-navbar .navbar-brand,
     .custom-navbar .nav-link {
-      line-height: 80px; 
+      line-height: 80px;
     }
     .custom-navbar .navbar-toggler {
       margin-top: 20px;
@@ -19,23 +20,25 @@
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="./Panda-Bear-Silhouette-Logo-Design-premium-vector-PNG.png" alt="Logo" style="height: 40px;">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="chi-sono.html">Chi sono</a>
+            <a class="nav-link fw-bold" href="chi-sono.html">Chi sono</a>
           </li>
         </ul>
+        <button id="theme-toggle" class="btn btn-outline-secondary">Dark Mode</button>
       </div>
     </div>
   </nav>
@@ -44,29 +47,35 @@
     <h1 class="mb-4">Chi sono</h1>
     <div class="row">
       <div class="col-md-4">
-        <div class="card">
-          <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png" class="card-img-top" alt="Passione">
-          <div class="card-body">
-            <h5 class="card-title">Basket</h5>
-            <p class="card-text">Il basket è energia pura, una fusione di tecnica e passione. Ogni azione è un'emozione che pulsa al ritmo del gioco. È lì che il cuore corre più veloce della palla! 🏀</p>
+        <div class="collapse" id="passion1">
+          <div class="card">
+            <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png" class="card-img-top" alt="Passione">
+            <div class="card-body">
+              <h5 class="card-title">Basket</h5>
+              <p class="card-text">Il basket è energia pura, una fusione di tecnica e passione. Ogni azione è un'emozione che pulsa al ritmo del gioco. È lì che il cuore corre più veloce della palla! 🏀</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
-          <img src="https://i.pinimg.com/736x/8b/e8/9c/8be89c8d35b20958ed01c7a3b71ab725.jpg" class="card-img-top" alt="Passione">
-          <div class="card-body">
-            <h5 class="card-title">Calcio</h5>
-            <p class="card-text">Il calcio è pura passione, un gioco che unisce tecnica, emozione e spirito di squadra. Ogni gol è un momento di gioia indescrivibile, un'esplosione di energia che coinvolge giocatori e tifosi. È lì che la magia prende vita! ⚽️</p>
+        <div class="collapse" id="passion2">
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/8b/e8/9c/8be89c8d35b20958ed01c7a3b71ab725.jpg" class="card-img-top" alt="Passione">
+            <div class="card-body">
+              <h5 class="card-title">Calcio</h5>
+              <p class="card-text">Il calcio è pura passione, un gioco che unisce tecnica, emozione e spirito di squadra. Ogni gol è un momento di gioia indescrivibile, un'esplosione di energia che coinvolge giocatori e tifosi. È lì che la magia prende vita! ⚽️</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
-          <img src="https://i.scdn.co/image/ab67616d0000b2736051d0c820bb49e717f99238" class="card-img-top" alt="Passione">
-          <div class="card-body">
-            <h5 class="card-title">Musica</h5>
-            <p class="card-text">La musica rap americana è ritmo e poesia, una voce potente che racconta storie e sogni con autenticità. 🎤</p>
+        <div class="collapse" id="passion3">
+          <div class="card">
+            <img src="https://i.scdn.co/image/ab67616d0000b2736051d0c820bb49e717f99238" class="card-img-top" alt="Passione">
+            <div class="card-body">
+              <h5 class="card-title">Musica</h5>
+              <p class="card-text">La musica rap americana è ritmo e poesia, una voce potente che racconta storie e sogni con autenticità. 🎤</p>
+            </div>
           </div>
         </div>
       </div>
@@ -75,29 +84,35 @@
     <h2 class="mt-5">Esperienze</h2>
     <div class="row">
       <div class="col-md-4">
-        <div class="card">
-          <img src="https://moveo.telepass.com/wp-content/uploads/2023/08/apertura.jpg" class="card-img-top" alt="Esperienza">
-          <div class="card-body">
-            <h5 class="card-title">Malaga</h5>
-            <p class="card-text">Il mio stage a Malaga è stato breve ma intenso. Ho lavorato in un'azienda di esportazione di prodotti agricoli, occupandomi di marketing digitale. Ho imparato molto sul mondo del lavoro e ho migliorato le mie competenze in ambito digitale. Ho avuto modo di conoscere persone fantastiche e di scoprire una città bellissima, ricca di storia e cultura. Consiglierei a tutti un'esperienza di stage a Malaga!</p>
+        <div class="collapse" id="experience1">
+          <div class="card">
+            <img src="https://moveo.telepass.com/wp-content/uploads/2023/08/apertura.jpg" class="card-img-top" alt="Esperienza">
+            <div class="card-body">
+              <h5 class="card-title">Malaga</h5>
+              <p class="card-text">Il mio stage a Malaga è stato breve ma intenso. Ho lavorato in un'azienda di esportazione di prodotti agricoli, occupandomi di marketing digitale. Ho imparato molto sul mondo del lavoro e ho migliorato le mie competenze in ambito digitale. Ho avuto modo di conoscere persone fantastiche e di scoprire una città bellissima, ricca di storia e cultura. Consiglierei a tutti un'esperienza di stage a Malaga!</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
-          <img src="https://cdn.startupitalia.eu/wp-content/uploads/sites/8/2016/12/super-smash.jpeg" class="card-img-top" alt="Esperienza">
-          <div class="card-body">
-            <h5 class="card-title">Videogiochi</h5>
-            <p class="card-text">Mi piacciono i videogiochi perché permettono di esplorare mondi creativi e vivere storie uniche. Sogno di imparare a programmarli per dare vita a esperienze che possano coinvolgere gli altri.</p>
+        <div class="collapse" id="experience2">
+          <div class="card">
+            <img src="https://cdn.startupitalia.eu/wp-content/uploads/sites/8/2016/12/super-smash.jpeg" class="card-img-top" alt="Esperienza">
+            <div class="card-body">
+              <h5 class="card-title">Videogiochi</h5>
+              <p class="card-text">Mi piacciono i videogiochi perché permettono di esplorare mondi creativi e vivere storie uniche. Sogno di imparare a programmarli per dare vita a esperienze che possano coinvolgere gli altri.</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
-          <img src="https://www.rockon.it/wp-content/uploads/2022/12/idays2023milano.jpg" class="card-img-top" alt="Esperienza">
-          <div class="card-body">
-            <h5 class="card-title">Concerto</h5>
-            <p class="card-text">Il concerto di Travis Scott a Milano è stata un’esperienza indimenticabile. L’atmosfera era elettrizzante, con il pubblico che cantava ogni canzone a squarciagola. I giochi di luce e gli effetti visivi hanno reso il tutto ancora più spettacolare, mentre Travis ha mantenuto un’energia incredibile per tutta la serata.</p>
+        <div class="collapse" id="experience3">
+          <div class="card">
+            <img src="./astroworld.png" class="card-img-top" alt="Esperienza">
+            <div class="card-body">
+              <h5 class="card-title">Concerto</h5>
+              <p class="card-text">Il concerto di Travis Scott a Milano è stata un’esperienza indimenticabile. L’atmosfera era elettrizzante, con il pubblico che cantava ogni canzone a squarciagola. I giochi di luce e gli effetti visivi hanno reso il tutto ancora più spettacolare, mentre Travis ha mantenuto un’energia incredibile per tutta la serata.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -105,5 +120,45 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const collapseIds = ['passion1', 'passion2', 'passion3', 'experience1', 'experience2', 'experience3'];
+    collapseIds.forEach((id, index) => {
+      setTimeout(() => {
+        const collapseElement = document.getElementById(id);
+        new bootstrap.Collapse(collapseElement, { toggle: true });
+      }, 200 * index);
+    });
+  </script>
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const navbar = document.getElementById('main-navbar');
+    let currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-bs-theme', currentTheme);
+    updateNavbarTheme(currentTheme);
+    updateToggleText(currentTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const theme = document.documentElement.getAttribute('data-bs-theme');
+      const newTheme = theme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-bs-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateNavbarTheme(newTheme);
+      updateToggleText(newTheme);
+    });
+
+    function updateToggleText(theme) {
+      themeToggleBtn.textContent = theme === 'light' ? 'Dark Mode' : 'Light Mode';
+    }
+
+    function updateNavbarTheme(theme) {
+      if (theme === 'dark') {
+        navbar.classList.remove('navbar-light', 'bg-light');
+        navbar.classList.add('navbar-dark', 'bg-dark');
+      } else {
+        navbar.classList.remove('navbar-dark', 'bg-dark');
+        navbar.classList.add('navbar-light', 'bg-light');
+      }
+    }
+  </script>
 </body>
 </html>
